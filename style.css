@@ -1,73 +1,5 @@
-/*
-  1. Use a more-intuitive box-sizing model.
-*/
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/*
-  2. Remove default margin
-*/
 * {
-  margin: 0;
-  padding: 0;
-  font-family: "poppins", sans-serif;
   box-sizing: border-box;
-}
-
-/*
-  Typographic tweaks!
-  3. Add accessible line-height
-  4. Improve text rendering
-*/
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-}
-
-/*
-  5. Improve media defaults
-*/
-img,
-picture,
-video,
-canvas,
-svg {
-  display: block;
-  max-width: 100%;
-}
-
-/*
-  6. Remove built-in form typography styles
-*/
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/*
-  7. Avoid text overflows
-*/
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
-}
-
-/*
-  8. Create a root stacking context
-*/
-#root,
-#__next {
-  isolation: isolate;
 }
 
 body {
@@ -114,7 +46,41 @@ body .card .search button {
   align-items: center;
 }
 body .card .search button img {
-  width: 20px;
+  width: 16px;
+}
+body .card .weather .weather-icon {
+  width: 170px;
+  margin-top: 30px;
+}
+body .card .weather h1 {
+  font-size: 80px;
+  font-weight: 500;
+}
+body .card .weather h2 {
+  font-size: 45px;
+  font-weight: 400;
+  margin-top: -10px;
+}
+body .card .weather .details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+body .card .weather .details .col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+body .card .weather .details .col img {
+  width: 40%;
+  margin-right: 10px;
+}
+body .card .weather .details .col .humidity,
+body .card .weather .details .col .wind {
+  font-size: 28px;
+  margin-top: -6px;
 }
 
 /*# sourceMappingURL=style.css.map */
