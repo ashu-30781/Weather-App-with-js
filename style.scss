@@ -1,11 +1,20 @@
 * {
   box-sizing: border-box;
+  text-transform: uppercase;
 }
 
+
 body {
-  background-color: #222;
+
+  // background-color: #222;
+  background: linear-gradient(135deg, #6d25a1, #01210b);
+  background-repeat: no-repeat;
+  min-height: 787px;
+
+
 
   .card {
+    box-shadow: 0 0 100px greenyellow;
     width: 90%;
     max-width: 470px;
     background: linear-gradient(135deg, #00feda, #5b548a);
@@ -14,6 +23,7 @@ body {
     border-radius: 20px;
     padding: 40px 35px;
     text-align: center;
+
 
     .search {
       width: 100%;
@@ -62,6 +72,16 @@ body {
       margin-left: 10px;
       font-size: 14px;
       margin-top: 10px;
+
+      p {
+        font-size: 20px;
+        font-family: monospace;
+        background: linear-gradient(135deg, #593d3d, #7b6ed3);
+        /* background: black; */
+        width: fit-content;
+        padding: 14px;
+        border-radius: 13px;
+      }
     }
 
     .weather {
